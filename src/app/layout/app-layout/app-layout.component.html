@@ -26,6 +26,9 @@
 
   <div fxLayout="column">
     <div fxFlex="85vh">
+      <ul class="ngxcarouselPoint">
+        <li *ngFor="let i of pointNumbers; let i = index" [class.active]="i==pointers"></li>
+      </ul>
         <router-outlet></router-outlet>
     </div>
     <footer>
